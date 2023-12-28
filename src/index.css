@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 0deg 0% 100%;
+    --text: 222deg 40% 11%;
+  }
+
+  .dark {
+    --bg: 222deg 40% 11%;
+    --text: 0deg 0% 100%;
+  }
+
+  body {
+    @apply bg-bg text-text;
+  }
+}
